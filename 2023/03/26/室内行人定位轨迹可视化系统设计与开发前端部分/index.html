@@ -195,7 +195,7 @@ y_t=y_{t-1}+l_{t-1}\times \sin \theta_{t-1} \tag{1}
 <p>PDR 算法主要包括步频检测、步长估计、航向估计三个任务</p>
 <h4><span id="113-基础pdr算法"> 1.1.3 基础PDR算法</span></h4>
 <p>• 步频检测: 波峰测频法</p>
-<p><img src="/wandering.github.io/wandering.github.io/2023/03/26/%E5%AE%A4%E5%86%85%E8%A1%8C%E4%BA%BA%E5%AE%9A%E4%BD%8D%E8%BD%A8%E8%BF%B9%E5%8F%AF%E8%A7%86%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91%E5%89%8D%E7%AB%AF%E9%83%A8%E5%88%86/image-1.png" alt="图1.1 PDR示意图"></p>
+<p><img src="/wandering.github.io/wandering.github.io/2023/03/26/室内行人定位轨迹可视化系统设计与开发前端部分/image-1.png" alt="图1.1 PDR示意图"></p>
 <p>被测人员走动且手持终端时，随着人的周期性运动，三轴加速度传感器的波形也会产生周期性的变化，见图 1-2，其中以竖直方向（Z 轴）上的加速度变化最为明显。当一个有效波峰出现，即可认为移动了一步。按此原理即可估计出行人的步频。</p>
 <p><img src="/wandering.github.io/wandering.github.io/2023/03/26/%E5%AE%A4%E5%86%85%E8%A1%8C%E4%BA%BA%E5%AE%9A%E4%BD%8D%E8%BD%A8%E8%BF%B9%E5%8F%AF%E8%A7%86%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91%E5%89%8D%E7%AB%AF%E9%83%A8%E5%88%86/image-2.png" alt="图1.2 三轴加速度传感器波形"></p>
 <p>• 步长估计:Weinberg 算法<br>
